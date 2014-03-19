@@ -18,6 +18,20 @@ If you find bugs, or have questions relating to this library, please post them t
 
 ----
 
+##Contents:
+
+1. [Requirements](#requirements)
+2. [Features](#features)
+3. [License](#license)
+4. [Installation](#installation)
+5. [Updates](#updates)
+6. [Usage](#usage)
+7. [Limitations](#limitations)
+8. [Troubleshooting](#troubleshooting)
+9. [Support](#support)
+10. [Where can I find the sources?](#where-can-i-find-the-sources)
+11. [Credits](#credits)
+
 ##Requirements
 
 * Netbeans 7.4 or higher

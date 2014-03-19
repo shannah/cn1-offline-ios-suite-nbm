@@ -26,6 +26,7 @@ If you find bugs, or have questions relating to this library, please post them t
 4. [Installation](#installation)
 5. [Updates](#updates)
 6. [Usage](#usage)
+7. [Building with different versions of Codename One](#building-with-different-versions-of-codename-one)
 7. [Limitations](#limitations)
 8. [Troubleshooting](#troubleshooting)
 9. [Support](#support)

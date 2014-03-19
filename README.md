@@ -99,6 +99,17 @@ If the compile was successful, your app should open in the iOS simulator and sho
 
 Note: This screenshot shows an app opened in the iOS simulator, but you can produce builds for your device also.
 
+##Building with Different Versions of Codename One
+
+This module comes bundled with a version of Codename One that came from some SVN snapshot at some point in the past.  If you would prefer to build apps against your own version, or from the latest SVN, you can do that also by adding the following properties to your nbproject/project.properties file:
+
+* `codename1.src.dir` - The path to the "src" directory of your Codename One repository.  If you are working directly off the SVN repository, and you checked out the SVN repository to `/src/codenameone-read-only`, then this would be `/src/codenameone-read-only/CodenameOne/src`
+* `codename1.iosport.dir` - The path to the iOSPort directory (i.e. the directory containing all of your iOS port files).  If you are working off the SVN repository, and you checked out the repository to `/src/codenameone-read-only`, then this would be `/src/codenameone-read-only/Ports/iOSPort`.
+
+After changing these settings, you should perform a clean build at least once to ensure that all of the appropriate files are updated correctly.
+
+
+
 ##Limitations
 
 1. This module builds apps that are optimized for development. It includes a modified version of XMLVM that disables constant pools and vtable optimizations to make class files more independent and help with making compilation (rather re-compilation) faster.  For this reason (and because these changes are experimental) it is recommended that you only use this module for producing development builds.  Production builds should be generated on the Codename One build server.

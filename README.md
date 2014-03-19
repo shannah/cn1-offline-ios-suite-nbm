@@ -43,19 +43,13 @@ This module adds three actions to your Codename One project's contextual menu an
 
 1. Download the [Netbeans module](https://s3.amazonaws.com/download.weblite.ca/cn1-offline-ios-nbm/ca-weblite-codename1-netbeans.nbm)
 
-2. Open Netbeans, and select "Plugins" from the "Tools" menu.
- 
- <img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/tools-menu.png"/>
- 
- 
-3. Click on the "Downloaded" tab in the "Plugins" dialog.
+2. Open Netbeans, and select "Plugins" from the "Tools" menu. <br/><img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/tools-menu.png"/>
 
-<img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/plugins-dialog.png" width="600"/>
+3. Click on the "Downloaded" tab in the "Plugins" dialog. <br/><img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/plugins-dialog.png" width="600"/>
 
 4. Click the "Add Plugins..." button.  This should open a file dialog.
-5. Navigate to and select the `ca-weblite-codename1-netbeans.nbm` file that you downloaded in step 1.
 
-<img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/file-dialog.png" width="400"/>
+5. Navigate to and select the `ca-weblite-codename1-netbeans.nbm` file that you downloaded in step 1. <br/> <img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/file-dialog.png" width="400"/>
 
 6. Follow the prompts to complete the installation.
 

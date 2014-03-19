@@ -1,6 +1,6 @@
 #Codename One Offline iOS Build Netbeans Module
 
-This Netbeans module allows you to build your [Codename One](http://www.codenameone.com) applications for iOS locally.  It is intended for development only and not all features of Codename One are currently supported.
+This Netbeans module allows you to build your [Codename One](http://www.codenameone.com) applications for iOS locally.  It is intended for development only and not all features of Codename One are currently supported [See issuetracker for details](https://github.com/shannah/cn1-local-build-tools/issues).
 
 This module is a wrapper for the [Codename One Local iOS Build Ant Task](https://github.com/shannah/cn1-local-build-tools) to more easily integrate local/offline building into [Codename One](http://www.codenameone.com) Netbeans projects.
 

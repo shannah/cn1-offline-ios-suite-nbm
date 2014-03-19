@@ -59,4 +59,69 @@ Updates are managed through the Netbeans update center.  You should be notified 
 
 ##Usage
 
+###Building A Codename One Application for iOS Locally
+
+1. Open your Codename One application project in Netbeans.
+2. Right click on the project node in the project explorer.  This should reveal the project's contextual menu, and you should see an option called "Build for iOS Locally".<br/> <img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/project-menu.png"/>
+
+If a dialog appears asking you if you want to generate a new Xcode project, just select "OK".  At this point you should see a bunch of output to the "Output" window in Netbeans showing your the progress while it converts your Java files into C files.  If this is your first build, then this part may take 2 or 3 minutes to complete.  If this is a subsequent build then it may take as little as 10 seconds.
+
+After all of the Java files have been converted to C-Sources, Netbeans will automatically open a project in Xcode that contains your project files.
+
+<img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/xcode-project-page.png"/ width="800"/>
+
+At this point you should be able to just build the project in Xcode by selecting "Project" > "Run" or by clicking the "Run" button on the toolbar.
+
+**NOTE:** If this is a "clean" build or it is the first time you have built this project locally, the project may fail to build because the compiler isn't set correctly in project settings.  If this is the case, then you just need to select the "Default Compiler" option for the "Compiler for C/C++/Objective-C" line in your Xcode project's Build settings.  
+You can do this by clicking on your Project in the left column, then Clicking on the "Build Settings" tab.
+
+<img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/xcode-project-settings.png"/ width="800"/>
+
+If this is the the first build in your Xcode project, or this is the first build since your last "clean" build, then compilation will take a while (there will be a couple thousand C-source files to compile).  Subsequent compiles will be much faster though (usually a couple of seconds).
+
+If the compile was successful, your app should open in the iOS simulator and should be usable:
+
+<img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/ios-simulator-screenshot.png"/ width="800"/>
+
+Note: This screenshot shows an app opened in the iOS simulator, but you can produce builds for your device also.
+
+##Limitations
+
+1. This module builds apps that are optimized for development. It includes a modified version of XMLVM that disables constant pools and vtable optimizations to make class files more independent and help with making compilation (rather re-compilation) faster.  For this reason (and because these changes are experimental) it is recommended that you only use this module for producing development builds.  Production builds should be generated on the Codename One build server.
+2. This module is mostly a wrapper for the [cn1-local-ios-build-tools project](https://github.com/shannah/cn1-local-build-tools).  Therefore you can see a list of features that are not supported in its [issue tracker](https://github.com/shannah/cn1-local-build-tools/issues).
+
+##Troubleshooting
+
+###Xcode Build Fails: Incompatible Compiler
+
+If this is a "clean" build or it is the first time you have built this project locally, the project may fail to build because the compiler isn't set correctly in project settings.  If this is the case, then you just need to select the "Default Compiler" option for the "Compiler for C/C++/Objective-C" line in your Xcode project's Build settings.  
+You can do this by clicking on your Project in the left column, then Clicking on the "Build Settings" tab.
+
+<img src="https://raw.github.com/shannah/cn1-offline-ios-suite-nbm/master/screenshots/xcode-project-settings.png"/ width="800"/>
+
+##Support
+
+1. If you are having difficulty with applications that you build using this module, please try to perform the build using the Codename One build server before asking for support.  This module is not supported by the Codename One folks, it is purely a community-driven project.
+2. If you are having issues that occur with builds produce by this module, which do not occur when building using the build server, please report them to [the issue tracker](https://github.com/shannah/cn1-offline-ios-suite-nbm/issues).
+
+##Where Can I Find the Sources
+
+This module bundles together code from several different locations:
+
+1. **Codename One Sources** - You can get them from the [Codename One SVN Repository](https://code.google.com/p/codenameone/source/checkout)
+2. **XMLVM Sources** - This module uses a modified version of XMLVM.  You can find the sources [here](https://github.com/shannah/cn1/tree/master/Ports/iOSPort/xmlvm).
+3. **Codename One Offline iOS Ant Task** - Most of the building functionality of this module is provided by [this ANT task](https://github.com/shannah/cn1-local-build-tools)
+4. **Netbeans Module Code** - The actual code for this netbeans module can be found in [this GitHub repository](https://github.com/shannah/cn1-ios-local-builds-nbm)
+
+
+
+##Credits
+
+
+1. Thanks to **Shai Almog** and **Chen Fishbein** of Codename One for developing and maintaining [Codename One](http://www.codenameone.com), a powerful, cross-platform, mobile application toolkit and framework.
+2. Thanks for **Arno Puder** and the XMLVM team for developing and maintaining [XMLVM](http://xmlvm.org), a rich and wonderful tool for translating between different programming languages - in this case for the Java to C translator.
+3. This project is maintained by **[Steve Hannah](http://sjhannah.com)**.
+
+
+
 

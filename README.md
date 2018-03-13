@@ -1,10 +1,12 @@
-#Codename One Offline iOS Build Netbeans Module
+# Codename One Offline iOS Build Netbeans Module
+
+NOTE: This project is no longer maintained.  Recommend that you use the supported workflow for building Codename One applications as described on the [Codename One](http://www.codenameone.com) website.
 
 This Netbeans module allows you to build your [Codename One](http://www.codenameone.com) applications for iOS locally.  It is intended for development only and not all features of Codename One are currently supported [[See issuetracker for details](https://github.com/shannah/cn1-local-build-tools/issues)].
 
 This module is a wrapper for the [Codename One Local iOS Build Ant Task](https://github.com/shannah/cn1-local-build-tools) to more easily integrate local/offline building into [Codename One](http://www.codenameone.com) Netbeans projects.
 
-###IMPORTANT:
+### IMPORTANT:
 
 This module is designed to be used **for development builds only**.  It includes modifications to XMLVM to allow generated classes to be more self-contained, and thus optimized for faster compilation (when changes are made).  These changes are experimental and may not work correctly in all cases.  You are advised to use this module only as a tool to speed your development process.
 
@@ -18,7 +20,7 @@ If you find bugs, or have questions relating to this library, please post them t
 
 ----
 
-##Contents:
+## Contents:
 
 1. [Requirements](#requirements)
 2. [Features](#features)
